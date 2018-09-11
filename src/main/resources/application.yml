@@ -1,0 +1,12 @@
+spring:
+  redis:
+    port: 6379
+    host: localhost
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        max-wait: 6000ms
+  session:
+    store-type: redis
+
